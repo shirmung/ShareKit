@@ -276,6 +276,9 @@
 		7ACA93FD156D192100E7006E /* FBFrictionlessRequestSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ACA93FB156D192100E7006E /* FBFrictionlessRequestSettings.h */; };
 		7ACA93FE156D192100E7006E /* FBFrictionlessRequestSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA93FC156D192100E7006E /* FBFrictionlessRequestSettings.m */; };
 		C0D3077B147BDC8100E74EA3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D3077A147BDC8100E74EA3 /* CoreLocation.framework */; };
+		C14581D415A8C5800083B08D /* SHKBloggerAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14581D315A8C5800083B08D /* SHKBloggerAuthorizationViewController.m */; };
+		C14581D715A8C8B60083B08D /* SHKBlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = C14581D515A8C8B60083B08D /* SHKBlogger.h */; };
+		C14581D815A8C8B60083B08D /* SHKBlogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C14581D615A8C8B60083B08D /* SHKBlogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -580,6 +583,10 @@
 		C0AD00F4142B7B6D000862D9 /* SHKLinkedInOAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKLinkedInOAMutableURLRequest.h; sourceTree = "<group>"; };
 		C0AD00F5142B7B6D000862D9 /* SHKLinkedInOAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKLinkedInOAMutableURLRequest.m; sourceTree = "<group>"; };
 		C0D3077A147BDC8100E74EA3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C14581D215A8C5800083B08D /* SHKBloggerAuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHKBloggerAuthorizationViewController.h; path = Blogger/SHKBloggerAuthorizationViewController.h; sourceTree = "<group>"; };
+		C14581D315A8C5800083B08D /* SHKBloggerAuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHKBloggerAuthorizationViewController.m; path = Blogger/SHKBloggerAuthorizationViewController.m; sourceTree = "<group>"; };
+		C14581D515A8C8B60083B08D /* SHKBlogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHKBlogger.h; path = Blogger/SHKBlogger.h; sourceTree = "<group>"; };
+		C14581D615A8C8B60083B08D /* SHKBlogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHKBlogger.m; path = Blogger/SHKBlogger.m; sourceTree = "<group>"; };
 		E68738BE1416795C00D8C3DD /* SHKLogout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKLogout.h; sourceTree = "<group>"; };
 		E68738BF1416795C00D8C3DD /* SHKLogout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKLogout.m; sourceTree = "<group>"; };
 		F92EF487148E915E0070F913 /* SHKiOS5Twitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKiOS5Twitter.h; sourceTree = "<group>"; };
@@ -1083,6 +1090,7 @@
 		43A536C011DBE3B9004A1712 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C1B7FB10159E208A00B18D3E /* Blogger */,
 				7A0F91CB156B9FCE009CB40A /* Delicious */,
 				FDB495A11520349A00505A99 /* Readability */,
 				B7EFCD8914C6B966004910F1 /* Diigo */,
@@ -1391,6 +1399,17 @@
 			path = LinkedIn;
 			sourceTree = "<group>";
 		};
+		C1B7FB10159E208A00B18D3E /* Blogger */ = {
+			isa = PBXGroup;
+			children = (
+				C14581D515A8C8B60083B08D /* SHKBlogger.h */,
+				C14581D615A8C8B60083B08D /* SHKBlogger.m */,
+				C14581D215A8C5800083B08D /* SHKBloggerAuthorizationViewController.h */,
+				C14581D315A8C5800083B08D /* SHKBloggerAuthorizationViewController.m */,
+			);
+			name = Blogger;
+			sourceTree = "<group>";
+		};
 		E68738B6141677C000D8C3DD /* Logout */ = {
 			isa = PBXGroup;
 			children = (
@@ -1414,10 +1433,10 @@
 		FA5AA3B4149625010064DB24 /* Vkontakte */ = {
 			isa = PBXGroup;
 			children = (
-				FA5AA3B6149625460064DB24 /* SHKVkontakteOAuthView.m */,
-				FA5AA3B7149625460064DB24 /* SHKVkontakteOAuthView.h */,
-				FA5AA3BA149625460064DB24 /* SHKVkontakte.m */,
 				FA5AA3BB149625460064DB24 /* SHKVkontakte.h */,
+				FA5AA3BA149625460064DB24 /* SHKVkontakte.m */,
+				FA5AA3B7149625460064DB24 /* SHKVkontakteOAuthView.h */,
+				FA5AA3B6149625460064DB24 /* SHKVkontakteOAuthView.m */,
 			);
 			path = Vkontakte;
 			sourceTree = "<group>";
@@ -1464,6 +1483,7 @@
 				7ABCDBA91577528B003BBFFD /* SHKFormFieldCellSwitch.h in Headers */,
 				7ABCDBB0157757D1003BBFFD /* SHKFormFieldCellOptionPicker.h in Headers */,
 				7A4CAA171577BEFA0010E6B3 /* SHKFormFieldCell_PrivateProperties.h in Headers */,
+				C14581D715A8C8B60083B08D /* SHKBlogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1619,6 +1639,7 @@
 				43A5383A11DBE493004A1712 /* RootViewController.m in Sources */,
 				43A5383B11DBE493004A1712 /* ShareKitAppDelegate.m in Sources */,
 				7AA40570146F1D6400685C81 /* ShareKitDemoConfigurator.m in Sources */,
+				C14581D415A8C5800083B08D /* SHKBloggerAuthorizationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1855,6 +1876,7 @@
 				7AB8050E15AC7A9D004FB430 /* ENCredentialStore.m in Sources */,
 				7AB8050F15AC7AAF004FB430 /* ENOAuthViewController.m in Sources */,
 				7AB8051015AC7BC9004FB430 /* GTMNSString+HTML.m in Sources */,
+				C14581D815A8C8B60083B08D /* SHKBlogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
